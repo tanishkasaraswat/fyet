@@ -35,21 +35,53 @@ const SignUp = () => {
       reader.readAsDataURL(file);
     }
   };
-  const handleSubmit = (e: React.FormEvent) => {
+  
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!fullName || !email || !username || !password || !age || !role) {
       toast.error('Please fill in all required fields');
       return;
     }
+    
     setIsSubmitting(true);
-
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+  
+    try {
+      const formData = new FormData();
+      formData.append('fullName', fullName);
+      formData.append('email', email);
+      formData.append('username', username);
+      formData.append('password', password);
+      formData.append('age', age);
+      formData.append('role', role);
+      
+      // If avatar is selected, append it to formData
+      if (fileInputRef.current?.files?.[0]) {
+        formData.append('avatar', fileInputRef.current.files[0]);
+      }
+  
+      const response = await fetch('https://fyet-2.onrender.com/api/v1/user/register', {
+        method: 'POST',
+        body: formData,
+        // Don't set Content-Type header when using FormData,
+        // the browser will set it automatically with the correct boundary
+      });
+  
+      const data = await response.json();
+  
+      if (!response.ok) {
+        throw new Error(data.message || 'Registration failed');
+      }
+  
       toast.success('Account created successfully!');
       navigate('/login');
-    }, 1500);
+    } catch (error) {
+      console.error('Registration error:', error);
+      toast.error(error.message || 'An error occurred during registration');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
   return <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-white to-gray-50 px-4">
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute -top-[30%] -left-[10%] w-[500px] h-[500px] rounded-full opacity-70 bg-orange-100"></div>
