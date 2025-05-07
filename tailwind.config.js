@@ -1,0 +1,52 @@
+module.exports = {
+	mode: "jit",
+	content: ["./src/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+	darkMode: "class",
+	theme: {
+	  screens: { lg: { max: "1440px" }, md: { max: "1050px" }, sm: { max: "550px" } },
+	  extend: {
+		colors: {
+		  black: {
+			600: "var(--black_600)",
+			"900_11": "var(--black_900_11)",
+			"900_0c": "var(--black_900_0c)",
+			"900_3f": "var(--black_900_3f)",
+		  },
+		  fyet_framer_website: {
+			alabaster: "var(--fyet_framer_website_alabaster)",
+			black: "var(--fyet_framer_website_black)",
+			chocolate: "var(--fyet_framer_website_chocolate)",
+			cod_gray: "var(--fyet_framer_website_cod_gray)",
+			cod_gray_0: "var(--fyet_framer_website_cod_gray_0)",
+			cod_gray_1: "var(--fyet_framer_website_cod_gray_1)",
+			concrete: "var(--fyet_framer_website_concrete)",
+			ferra: "var(--fyet_framer_website_ferra)",
+			gamboge: "var(--fyet_framer_website_gamboge)",
+			linen: "var(--fyet_framer_website_linen)",
+			mercury: "var(--fyet_framer_website_mercury)",
+			midnight: "var(--fyet_framer_website_midnight)",
+			mine_shaft: "var(--fyet_framer_website_mine_shaft)",
+			tamarind: "var(--fyet_framer_website_tamarind)",
+			white: "var(--fyet_framer_website_white)",
+		  },
+		  gray: { 500: "var(--gray_500)", "500_3d": "var(--gray_500_3d)" },
+		  gray_shadow: "var(--gray_shadow)",
+		},
+		boxShadow: {
+		  xs: "0 20px 60px -2.5px #0000000c",
+		  sm: "25px 100px 2px 0 #00000003f",
+		  md: "0 30px 30px -3.75px #0000000c",
+		  lg: "0 0 13px 5px #00000029",
+		},
+		fontFamily: {
+		  inter: "Inter",
+		  dmsans: "DM Sans",
+		  poppins: "Poppins",
+		  montserrat: "Montserrat",
+		  frankruhllibre: "Frank Ruhl Libre",
+		  lora: "Lora",
+		},
+	  },
+	},
+	plugins: [require("@tailwindcss/forms")],
+  };

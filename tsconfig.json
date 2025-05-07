@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "baseUrl": "./src",
+    "useDefineForClassFields": true,
+    "esModuleInterop": false,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["node", "vite/client"],    
+    "lib": [
+      "esnext",
+      "dom",]
+  },
+  "include": ["src"]
+}

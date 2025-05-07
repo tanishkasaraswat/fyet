@@ -1,0 +1,111 @@
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/MontserratBold.ttf");
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/FrankRuhlLibreSemiBold.ttf");
+    font-family: "Frank Ruhl Libre";
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/InterSemiBold.ttf");
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/InterLight.ttf");
+    font-family: "Inter";
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/InterRegular.ttf");
+    font-family: "Inter";
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/PoppinsRegular.ttf");
+    font-family: "Poppins";
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/LoraMediumItalic.ttf");
+    font-family: "Lora";
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/LoraBoldItalic.ttf");
+    font-family: "Lora";
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/DMSans9ptRegular.ttf");
+    font-family: "DM Sans";
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/DMSansBold.ttf");
+    font-family: "DM Sans";
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/InterMedium.ttf");
+    font-family: "Inter";
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/PoppinsLight.ttf");
+    font-family: "Poppins";
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/InterBold.ttf");
+    font-family: "Inter";
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/InterSemiBold.ttf");
+    font-family: "Inter";
+    font-weight: 600;
+  }
